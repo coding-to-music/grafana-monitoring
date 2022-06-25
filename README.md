@@ -20,7 +20,13 @@ From / By previous articles:
 
 [![Grafana screenshot](https://prometheus.io/assets/grafana_prometheus.png)](https://prometheus.io/assets/grafana_prometheus.png)
 
-https://grafana.com/grafana/dashboards/12167
+https://grafana.com/grafana/dashboards/12167  Grafana Dashboard for Cloudflare Analytics and Overview
+
+https://grafana.com/grafana/dashboards/
+
+9614 NGINX Ingress controller reading prometheus
+
+
 
 ## Environment variables:
 
@@ -53,13 +59,18 @@ git remote add origin git@github.com:coding-to-music/grafana-monitoring.git
 git push -u origin main
 ```
 
-#
+# use grafana-cli to install plugins
 
 ```
+sudo grafana-cli plugins install redis-datasource
 
+sudo grafana-cli plugins install mongodb-datasource
+
+sudo grafana-cli plugins install grafana-github-datasource
 ```
 
-Grafana Digitalocean | All about
+# Grafana Digitalocean
+
 by Maheen Aboobakkar | Jun 5, 2022
 
 Grafana in digitalocean is an open-source data visualization and monitoring tool that integrates with complex data.
@@ -68,7 +79,7 @@ As part of our Digitalocean managed service, Bobcares responds to all inquiries,
 
 Let’s take a closer look at Grafana in digitalocean’s specifics.
 
-# Grafana in digitalocean
+### Grafana in digitalocean
 
 by Maheen Aboobakkar | Jun 5, 2022
 
