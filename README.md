@@ -20,8 +20,13 @@ From / By previous articles:
 
 [![Grafana screenshot](https://prometheus.io/assets/grafana_prometheus.png)](https://prometheus.io/assets/grafana_prometheus.png)
 
-
 https://grafana.com/grafana/dashboards/
+
+## Restart grafana-server:
+
+```
+sudo systemctl restart grafana-server
+```
 
 ## Environment variables:
 
@@ -85,14 +90,24 @@ https://grafana.com/grafana/dashboards/14731
 
 https://github.com/3xploitGuy/linuxstats
 
+## 9710 Open Weather Map
+
+9710
+
+## 13978 Node Exporter Quickstart and Dashboard
+
+13978
+
+## 12559 Grafana Loki Dashboard for NGINX Service Mesh
+
+12559
+
 ## Dashboard Monitoring Linux host metrics
 
 https://prometheus.io/docs/guides/node-exporter/
 
 
----
 title: Monitoring Linux host metrics with the Node Exporter
----
 
 # Monitoring Linux host metrics with the Node Exporter
 
@@ -110,9 +125,19 @@ NOTE: While the Prometheus Node Exporter is for *nix systems, there is the [Wind
 The Prometheus Node Exporter is a single static binary that you can install [via tarball](#tarball-installation). Once you've downloaded it from the Prometheus [downloads page](https://prometheus.io/download#node_exporter) extract it, and run it:
 
 ```bash
+# example 
 wget https://github.com/prometheus/node_exporter/releases/download/v*/node_exporter-*.*-amd64.tar.gz
+
+# example un-tar
 tar xvfz node_exporter-*.*-amd64.tar.gz
-cd node_exporter-*.*-amd64
+
+# my download type
+wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
+
+# my example un-tar
+tar xvfz node_exporter-1.3.1.linux-amd64.tar.gz
+
+cd node_exporter-1.3.1.linux-amd64
 ./node_exporter
 ```
 
